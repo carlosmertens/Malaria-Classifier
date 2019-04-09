@@ -16,18 +16,18 @@ You will also need to have software installed to run and execute a [Jupyter Note
 
 ### Code
 
-Template code was provided by Udacity in the `malaria_app.ipynb` notebook file. 
+Code was create in the `malaria_app.ipynb` notebook file. The python files `train.py` and `predict.py` are to be run on the command line as part of the application.
 
 ### Run
 
 In a terminal or command window, navigate to the top-level project directory `Malaria-Classifier` (that contains this README) and run one of the following commands:
 
 ```bash
-ipython notebook malaria_app.ipynb
+ipython notebook malaria.ipynb
 ```  
 or
 ```bash
-jupyter notebook malaria_app.ipynb
+jupyter notebook malaria.ipynb
 ```
 
 This will open the Jupyter Notebook software and project file in your browser.
