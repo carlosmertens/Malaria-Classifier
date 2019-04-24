@@ -16,23 +16,26 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import argparse
 
-# Import libraries for data processing
+# Import modules for data processing
 import os
 import cv2
 from glob import glob
 from sklearn.model_selection import train_test_split
 from keras.utils import to_categorical
 
-# Import libraries to build neural network
+# Import modules to build neural network
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, GlobalAveragePooling2D
 from keras.layers import Dropout, Dense
 from keras.layers.normalization import BatchNormalization
 from keras.callbacks import ModelCheckpoint
 
-# Import libraries for evaluation metrics
+# Import modules for evaluation metrics
 from sklearn.metrics import classification_report
 from sklearn.metrics import fbeta_score
+
+# Import module to save the trained model
+from keras.models import load_model
 
 
 def get_args():
@@ -182,6 +185,5 @@ print(classification_report(np.argmax(y_test, axis = 1), np.argmax(y_pred, axis 
 fbeta = fbeta_score(np.argmax(y_test, axis = 1), np.argmax(y_pred, axis=1), beta=0.92)
 print("F-beta score:", fbeta)
 
-from keras.models import load_model
-
+# Save model into the directory assigned
 model.save(in_arg.save_dir + 'malaria_cnn.h5')
