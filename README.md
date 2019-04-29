@@ -60,10 +60,6 @@ python predict.py --input <path to a cell blood image> --checkpoint <path to che
 The project contains a proposal file `Proposal.pdf` and a project report file `project_report.pdf`
 
 
-### Authors
+### Author
 
-* **Carlos Mertens** - *Udacity Student* -
-
-## Acknowledgments
-
-* Udacity, Inc.
+* **Carlos Mertens** - *Udacity Student*
