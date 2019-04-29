@@ -6,8 +6,6 @@
 # Use argparse Expected Call with <> indicating expected user input:
 #      python predict.py --input <path to a cell blood image> --checkpoint 
 # 							<path to checkpoint file loading pre-trained model>
-#   Example call:
-#    >>python predict.py --checkpoint Saved_models --checkpoint Data/Input-Data 
 
 # Imports
 import numpy as np
